@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./fonts/Muli-Light.ttf">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.cs" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <title>Tour Agency</title>
+</head>
+
+<body>
+    <header data-aos="fade-down" class="flex justify-around items-center pt-[25px]">
+        <span><img src="./images/logo.svg" alt=""></span>
+        <ul
+            class="flex justify-around gap-[30px] items-center font-[Inter] font-normal text-[15px] text-[#B8BECD] max-[705px]:hidden">
+            <li><a class="hover:text-black" href="#">Home</a></li>
+            <li><a class="hover:text-black" href="#">Destinations</a></li>
+            <li><a class="hover:text-black" href="#">About</a></li>
+            <li><a class="hover:text-black" href="#">Partner</a></li>
+            <li><button type="button"
+                    class=" w-[130px] h-[50px] text-yellow-400 hover:text-white border border-[#FB8F1D] hover:bg-[#FB8F1D] focus:ring-4 focus:outline-none focus:ring-#FB8F1D font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-[#FB8F1D] dark:text-[#FB8F1D] dark:hover:text-white dark:hover:bg-[#FB8F1D] dark:focus:ring-[#FB8F1D]">Login</button>
+            </li>
+            <li><button type="button"
+                    class=" w-[130px] h-[50px] text-yellow-400 hover:text-white border border-[#FB8F1D] hover:bg-[#FB8F1D] focus:ring-4 focus:outline-none focus:ring-#FB8F1D font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-[#FB8F1D] dark:text-[#FB8F1D] dark:hover:text-white dark:hover:bg-[#FB8F1D] dark:focus:ring-[#FB8F1D]">Register</button>
+            </li>
+        </ul>
+        <span class="hidden max-[705px]:block text-[30px] text-[#FB8F1D]"><i class="fa-solid fa-bars"></i></span>
+    </header>
+    <main>
+        <section class="flex justify-around pt-[30px] max-[1000px]:block">
+            <div data-aos="zoom-out" class="hidden max-[1000px]:block">
+                <img class="w-[400px] flex m-auto max-[400px]:w-[300px] flexm
+                 m-auto" src="./images/globe.png" alt="">
+            </div>
+            <div class="pt[100px] max-[1000px]:pb-[40px]">
+                <p data-aos="zoom-in-up"
+                    class="font-[Playfair Display] font-semibold text-[60px] leading-[125%] text-[#202336] max-[1000px]:text-center">
+                    Explore and <br>Travel
+                </p>
+                <p data-aos="zoom-in-up"
+                    class="font-[Inter] font-semibold text-[20px] text-[#202336] pt-[65px] max-[1000px]:text-center">
+                    Holiday finder
+                </p>
+                <div data-aos="zoom-in-up" id="line" class="w-[32px] h-[2px] rounded-[4px] bg-[#202336] mt-[20px] ">
+
+                </div>
+                <div class="flex justify-center gap-[30px] pt-[45px] max-[500px]:block">
+                    <div class="max-[500px]: flex justify-center">
+                        <select data-aos="fade-down-left"
+                            class=" w-[220px] h-[50px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Location</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="FR">France</option>
+                            <option value="DE">Germany</option>
+                        </select>
+                    </div>
+                    <div class="max-[500px]: flex justify-center">
+                        <select data-aos="fade-down-right"
+                            class=" w-[220px] h-[50px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 max-[500px]:mt-[30px]">
+                            <option selected>Activity</option>
+                            <option>More</option>
+                            <option>Normal</option>
+                            <option>Less</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="flex justify-center gap-[30px] pt-[30px] max-[500px]:block">
+                    <div class="max-[500px]: flex justify-center">
+                        <select data-aos="fade-down-left"
+                            class=" w-[220px] h-[50px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Grade</option>
+                            <option>5</option>
+                            <option value="CA">4</option>
+                            <option value="FR">3</option>
+                            <option value="DE">2</option>
+                        </select>
+                    </div>
+                    <div class="max-[500px]: flex justify-center">
+                        <select data-aos="fade-down-right"
+                            class=" w-[220px] h-[50px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 max-[500px]:mt-[30px]">
+                            <option selected>Date</option>
+                            <option>2022</option>
+                            <option>2023</option>
+                            <option>2024</option>
+                            <option>2025</option>
+                        </select>
+                    </div>
+                </div>
+                <button data-aos="fade-down-left" type="button" id="explore" class=" w-[180px] h-[50px] text-yellow-400 hover:text-white border border-[#FB8F1D] hover:bg-[#FB8F1D] focus:ring-4 focus:outline-none focus:ring-#FB8F1D font-medium rounded-lg text-sm px-16 py-2.5 text-center me-2 mb-2 dark:border-[#FB8F1D] dark:text-[#FB8F1D] dark:hover:text-white dark:hover:bg-[#FB8F1D] dark:focus:ring-[#FB8F1D] mt-[30px]
+                max-[1000px]:flex m-auto">Explore</button>
+            </div>
+            <div data-aos="zoom-out">
+                <img data-aos="zoom-out"
+                    class="w-[600px] max-[1100px]:w-[500px] max-[1000px]:flex m-auto  max-[1000px]:hidden"
+                    src="./images/globe.png" alt="">
+            </div>
+        </section>
+        <section class="flex justify-around pt-[150px] pb-[150px] max-[1000px]:block">
+            <div class="max-[1100px]:w-[500px] max-[1000px]:flex m-auto max-[500px]:w-[400px] max-[400px]:w-[300px]">
+                <img data-aos="zoom-out" src="./images/fly.png" alt="">
+            </div>
+            <div class="pt-[150px]">
+                <p data-aos="zoom-in-up"
+                    class="font-[Playfair Display] font-bold text-[34px] leading-[139%] text-[#000] max-[1000px]:text-center">
+                    A new way to <br class="hidden max-[500px]:block">explore the <br class="max-[500px]:hidden"> world
+                </p>
+                <p data-aos="zoom-in-up"
+                    class="font-light text-[15px] leading-[170%] text-[#7d7987] pt-[20px] max-[1000px]:text-center">
+                    For decades travellers have reached for Lonely Planet <br> books when looking to plan and execute
+                    their perfect <br>
+                    trip, but now, they can also let Lonely Planet Experiences <br> lead the way
+                </p>
+                <button data-aos="fade-down-left" type="button" id="xplore" class=" w-[180px] h-[50px] text-yellow-400 hover:text-white border border-[#FB8F1D] hover:bg-[#FB8F1D] focus:ring-4 focus:outline-none focus:ring-#FB8F1D font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-[#FB8F1D] dark:text-[#FB8F1D] dark:hover:text-white dark:hover:bg-[#FB8F1D] dark:focus:ring-[#FB8F1D]
+              mt-[30px]  max-[1000px]:flex m-auto ">Learn more</button>
+            </div>
+        </section>
+        <section class="">
+            <div id="feature" class=" items-center">
+                <p data-aos="flip-left"
+                    class="font-[Playfair Display] font-bold text-[34px] leading-[139%] text-[#000]">
+                    Featured destinations
+                </p>
+                <p data-aos="flip-right"
+                    class="font-[Inter] font-semibold text-[17px] leading-[353%] text-[#fb8f1d] max-[550px]:hidden">
+                    View all <span class="pl-[8px]"><i class="fa-solid fa-chevron-right"></i></span>
+                </p>
+            </div>
+            <ul class="flex justify-center gap-[25px] max-[1130px]:block">
+                <li data-aos="zoom-in-right" style="background-image: url(./images/image\ 1.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 261px;
+                height: 337px;" class="rounded-[8px] image-animation max-[1130px]:flex m-auto mt-[30px]">
+                    <div class="w-[120px] h-[56px] bg-white rounded-[5px] animation">
+                        <p class="font-[Inter] font-semibold text-[17px]  text-[#042521]">
+                            Raja Ampat
+                        </p>
+                        <p class="font-[Inter] font-medium text-[15px] text-[#80918e]">
+                            Indonesia
+                        </p>
+                    </div>
+                </li>
+                <li data-aos="zoom-in-left" style="background-image: url(./images/image\ 2.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 261px;
+                height: 337px;" class="rounded-[8px] image-animation max-[1130px]:flex m-auto mt-[30px]">
+                    <div class="w-[120px] h-[56px] bg-white rounded-[5px] animation">
+                        <p class="font-[Inter] font-semibold text-[17px]  text-[#042521]">
+                            Fanjingshan
+                        </p>
+                        <p class="font-[Inter] font-medium text-[15px] text-[#80918e]">
+                            China
+                        </p>
+                    </div>
+                </li>
+                <li data-aos="zoom-in-right" style="background-image: url(./images/image\ 3.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 261px;
+                height: 337px;" class="rounded-[8px] image-animation max-[1130px]:flex m-auto mt-[30px]">
+                    <div class="w-[120px] h-[56px] bg-white rounded-[5px] animation">
+                        <p class="font-[Inter] font-semibold text-[17px]  text-[#042521]">
+                            Vevey
+                        </p>
+                        <p class="font-[Inter] font-medium text-[15px] text-[#80918e]">
+                            Switzerland
+                        </p>
+                    </div>
+                </li>
+                <li data-aos="zoom-in-left" style="background-image: url(./images/image\ 4.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 261px;
+                height: 337px;" class="rounded-[8px] image-animation max-[1130px]:flex m-auto mt-[30px]">
+                    <div class="w-[120px] h-[56px] bg-white rounded-[5px] animation">
+                        <p class="font-[Inter] font-semibold text-[17px]  text-[#042521]">
+                            Skadar
+                        </p>
+                        <p class="font-[Inter] font-medium text-[15px] text-[#80918e]">
+                            Montenegro
+                        </p>
+                    </div>
+                </li>
+
+            </ul>
+
+        </section>
+        <section class="flex justify-around pt-[150px] max-[1000px]:block mt-[-150px]">
+            <div class="pt-[150px]">
+                <p data-aos="zoom-in-up"
+                    class="font-[Playfair Display] font-bold text-[35px] text-[#000] max-[1000px]:text-center">
+                    Guides by Thousand <br> Sunny
+                </p>
+                <p data-aos="zoom-in-up" class="font-light text-[#7d7987] pt-[20px] max-[1000px]:text-center">
+                    Packed with tips and advice from our on-the-ground <br> experts, our city guides app (iOS and
+                    Android) is the <br> ultimate resource before and during a trip.
+                </p>
+                <button data-aos="fade-down-left" type="button" id="download" class=" w-[164px] h-[50px] text-yellow-400 hover:text-white border border-[#FB8F1D] hover:bg-[#FB8F1D] focus:ring-4 focus:outline-none focus:ring-#FB8F1D font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-[#FB8F1D] dark:text-[#FB8F1D] dark:hover:text-white dark:hover:bg-[#FB8F1D] dark:focus:ring-[#FB8F1D] mt-[30px]
+                max-[1000px]:flex ">Download</button>
+            </div>
+            <div class=" pt-[50px]">
+                <img data-aos="zoom-out" class="max-[1000px]:flex m-auto max-[650px]:w-[400px] max-[400px]:w-[300px]"
+                    src="./images/travel.png" alt="">
+            </div>
+        </section>
+        <section>
+            <div id="edward" class="pt-[200px] pb-[100px] max-[860px]:block">
+                <div class="pl-[100px] max-[950px]:pl-[30px] max-[860px]:pl-[0px]">
+                    <p data-aos="flip-right"
+                        class="font-[Playfair Display] font-bold text-[35px] max-[860px]:text-center">
+                        Testimonials
+                    </p>
+                    <span class="max-[860px]:flex justify-center"><img data-aos="fade-down" data-aos-easing="linear"
+                            data-aos-duration="1500" class="mt-[140px]" src="./images/stars.svg" alt=""></span>
+                    <p data-aos="zoom-in"
+                        class="font-normal text-[24px] text-[#000] pt-[30px] max-[860px]:text-center max-[440px]:text-[15px]">
+                        “Quisque in lacus a urna fermentum <br> euismod. Integer mi nibh, dapibus ac <br> scelerisque
+                        eu, facilisis quis purus. Morbi <br> blandit sit amet turpis nec”
+                    </p>
+                    <p data-aos="flip-up"
+                        class="font-[Inter] font-bold text-[22px] text-[#000] pt-[40px] max-[860px]:text-center">
+                        Edward Newgate
+                    </p>
+                    <p data-aos="flip-up"
+                        class="font-[Inter] font-normal text-[18px] text-[rgba(0, 0, 0, 0.85)] pt-[35px] max-[860px]:text-center">
+                        Founder Circle
+                    </p>
+                </div>
+                <div data-aos="fade-left" id="photo" style="background-image: url(./images/photographer.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 416px;
+                height: 522px;"
+                    class=" photographer mt-[150px] rounded-[20px] max-[860px]:flex m-auto mt-[150px] max-[450px]:w-[300px]h-[400px]">
+                    <div id="button" class="w-[132px] h-[60px] bg-white">
+                        <button class="w-[40px] h-[40px] rounded-[100%]"><i
+                                class="fa-solid fa-chevron-left"></i></button>
+                        <button class="w-[40px] h-[40px] rounded-[100%]"><i
+                                class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="feature" class=" items-center">
+                <p class="font-[Playfair Display] font-bold text-[34px] leading-[139%] text-[#000]">
+                    Trending stories
+                </p>
+                <p class="font-[Inter] font-semibold text-[17px] leading-[353%] text-[#fb8f1d] max-[550px]:hidden">
+                    View all <span class="pl-[8px]"><i class="fa-solid fa-chevron-right"></i></span>
+                </p>
+            </div>
+            <div class="flex justify-around pt-[60px] pb-[196px] max-[1080px]:block">
+                <div data-aos="fade-left">
+                    <span><img class="rounded-t-[20px] max-[1080px]:flex m-auto" src="./images/yoga.svg" alt=""></span>
+                    <p class="font-[Inter] font-bold text-[19px] text-[#000] pt-[20px] max-[1080px]:text-center">
+                        The many benefits of <br>
+                        taking a healing holiday
+                    </p>
+                    <p class="font-[Inter] font-normal text-[15px] text-[#7d7987] pt-[20px] max-[1080px]:text-center">
+                        ‘Helaing holidays’ are on the rise <br>
+                        tohelp maximise your health and <br> happines...
+                    </p>
+                    <button
+                        class="font-[Inter] font-semibold text-[15px] text-[#fb8f1d] mt-[30px] max-[1080px]:flex m-auto">Read
+                        more</button>
+                </div>
+                <div data-aos="fade-right" class="max-[1080px]:pt-[30px]">
+                    <span><img class="rounded-t-[20px] max-[1080px]:flex m-auto" src="./images/food.svg" alt=""></span>
+                    <p class="font-[Inter] font-bold text-[19px] text-[#000] pt-[20px] max-[1080px]:text-center">
+                        The best Kyoto restaurant <br>
+                        to try Japanese food
+                    </p>
+                    <p class="font-[Inter] font-normal text-[15px] text-[#7d7987] pt-[20px] max-[1080px]:text-center">
+                        From tofu to teahouses, here’s our <br> guide to Kyoto’s best restaurants <br>
+                        to visit...
+                    </p>
+                    <button
+                        class="font-[Inter] font-semibold text-[15px] text-[#fb8f1d] mt-[30px] max-[1080px]:flex m-auto">Read
+                        more</button>
+                </div>
+                <div data-aos="fade-left" class="max-[1080px]:pt-[30px]">
+                    <span><img class="rounded-t-[20px] max-[1080px]:flex m-auto" src="./images/nef.svg" alt=""></span>
+                    <p class="font-[Inter] font-bold text-[19px] text-[#000] pt-[20px] max-[1080px]:text-center">
+                        Skip Chichen Itza and head <br>
+                        to this remote Yucatan
+                    </p>
+                    <p class="font-[Inter] font-normal text-[15px] text-[#7d7987] pt-[20px] max-[1080px]:text-center">
+                        It’s remote and challenging to get, <br>
+                        but braving the jungle and exploring <br>
+                        these ruins without the...
+                    </p>
+                    <button
+                        class="font-[Inter] font-semibold text-[15px] text-[#fb8f1d] mt-[30px] max-[1080px]:flex m-auto">Read
+                        more</button>
+                </div>
+                <div data-aos="fade-right" class="max-[1080px]:pt-[30px]">
+                    <span><img class="rounded-t-[20px] max-[1080px]:flex m-auto" src="./images/surfing.svg   "
+                            alt=""></span>
+                    <p class="font-[Inter] font-bold text-[19px] text-[#000] pt-[20px] max-[1080px]:text-center">
+                        Surf’s up at these beginner <br>
+                        spots around the world
+                    </p>
+                    <p class="font-[Inter] font-normal text-[15px] text-[#7d7987] pt-[20px] max-[1080px]:text-center">
+                        If learning to surf has in on your to- <br>
+                        do list for a while, the good news <br>
+                        is: it’s never too late...
+                    </p>
+                    <button
+                        class="font-[Inter] font-semibold text-[15px] text-[#fb8f1d] mt-[30px] max-[1080px]:flex m-auto">Read
+                        more</button>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#F9F9FB] ">
+            <div class="pt-[78px] pb-[81px] flex justify-around max-[800px]:block">
+                <div class="footer">
+                    <span><img class="max-[800px]:flex m-auto" src="./images/logo.svg" alt=""></span>
+                    <p class="font-light text-[18px] text-[#848484] pt-[36px] max-[800px]:text-center">
+                        Plan and book your perfect trip with <br>
+                        expert advice, travel tips destination <br>
+                        information from us
+                    </p>
+                    <p class="font-light text-[17px] text-[#848484] pt-[70px] max-[800px]:text-center">
+                        ©2020 Thousand Sunny. All rights reserved
+                    </p>
+                </div>
+                <div class="footer">
+                    <p class="font-bold text-[19px] leading-[316%] text-[#000] max-[800px]:text-center">
+                        Destinations
+                    </p>
+                    <p class="font-light text-[18px] text-[#848484] pt-[16px] max-[800px]:text-center">
+                        Africa
+                    </p>
+                    <p class="font-light text-[18px] text-[#848484] pt-[10px] max-[800px]:text-center">
+                        Antarctica
+                    </p>
+                    <p class="font-light text-[18px] text-[#848484] pt-[10px] max-[800px]:text-center">
+                        Asia
+                    </p>
+                    <p class="font-light text-[18px] text-[#848484] pt-[10px] max-[800px]:text-center">
+                        Europe
+                    </p>
+                    <p class="font-light text-[18px] text-[#848484] pt-[10px] max-[800px]:text-center">
+                        America
+                    </p>
+                </div>
+                <div class="footer">
+                    <p class="font-bold text-[19px] leading-[316%] text-[#000] max-[800px]:text-center">
+                        Shop
+                    </p>
+                    <p class="font-light text-[18px] text-[#848484] pt-[16px] max-[800px]:text-center">
+                        Destination Guides
+                    </p>
+                    <p class="font-light text-[18px] text-[#848484] pt-[10px] max-[800px]:text-center">
+                        Pictorial & Gifts
+                    </p>
+                    <p class="font-light text-[18px] text-[#848484] pt-[10px] max-[800px]:text-center">
+                        Special Offers
+                    </p>
+                    <p class="font-light text-[18px] text-[#848484] pt-[10px] max-[800px]:text-center">
+                        Delivery Times
+                    </p>
+                    <p class="font-light text-[18px] text-[#848484] pt-[10px] max-[800px]:text-center">
+                        FAQs
+                    </p>
+                </div>  
+                <div class="footer">
+                    <p class="font-bold text-[19px] leading-[316%] text-[#000] max-[800px]:text-center">
+                        Interests
+                    </p>
+                    <p class="font-light text-[18px] text-[#848484] pt-[16px] max-[800px]:text-center">
+                        Adventure Travel
+                    </p>
+                    <p class="font-light text-[18px] text-[#848484] pt-[10px] max-[800px]:text-center">
+                        Art And Culture
+                    </p>
+                    <p class="font-light text-[18px] text-[#848484] pt-[10px] max-[800px]:text-center">
+                        Wildlife And Nature
+                    </p>
+                    <p class="font-light text-[18px] text-[#848484] pt-[10px] max-[800px]:text-center">
+                        Family Holidays
+                    </p>
+                    <p class="font-light text-[18px] text-[#848484] pt-[10px] max-[800px]:text-center">
+                        Food And Drink
+                    </p>
+                </div>  
+            </div>
+            <div class="bg-[#c4c4c4] pt-[1px] pb-[1px] pl-[100px] pr-[100px] ">
+
+            </div>
+            <div class="flex justify-center pt-[30px] pb-[30px]">
+                <div class="">
+                    <button><i class="fa-brands fa-twitter"></i></button>
+                    <button class="ml-[20px]"><i class="fa-brands fa-facebook-f"></i></button>
+                    <button class="ml-[20px]"><i class="fa-brands fa-instagram"></i></button>
+                    <button class="ml-[20px]"><i class="fa-brands fa-linkedin-in"></i></button>
+                    <button class="ml-[20px]"><i class="fa-brands fa-youtube"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+
+        AOS.init();
+    </script>
+</body>
+
+</html>
